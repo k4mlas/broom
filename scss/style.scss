@@ -1,0 +1,282 @@
+//importy----------------------
+@import './colors';
+@import './component';
+//reset------------------------
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 1.6rem;
+}
+
+//NAV--------------------------------
+
+.nav__burger-btn {
+	position: fixed;
+	padding: 0.5em;
+	top: 25px;
+	right: 25px;
+	width: 45px;
+	height: 45px;
+	border: none;
+	background: none;
+	z-index: 1000;
+	cursor: pointer;
+	&-box {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		&-bars {
+			position: absolute;
+			top: 0px;
+			right: 0;
+			width: 100%;
+			height: 5px;
+			background-color: $pure-white;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 13px;
+				right: 0;
+				width: 50%;
+				height: 5px;
+				background-color: $pure-white;
+				transition: all 0.5s;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 27px;
+				right: 0;
+				width: 15%;
+				height: 5px;
+				background-color: $pure-white;
+				transition: all 0.5s 0.1s;
+			}
+		}
+	}
+	&:hover {
+		.nav__burger-btn-box-bars::before,
+		.nav__burger-btn-box-bars::after {
+			width: 100%;
+		}
+	}
+}
+.nav__items {
+	display: none;
+}
+
+//HEADER-----------------------------------
+
+.headerImg {
+	position: relative;
+	height: 100vh;
+	background-image: $header-gradient, url(../img/monk-g271851d7d_640.jpg);
+	background-position: center;
+	background-size: cover;
+
+	.headerText {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		&__title {
+			font-size: 4rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-shadow: 3px 3px 3px $pure-black;
+			color: $pure-white;
+			.fa-solid {
+				font-size: 4.8rem;
+				color: $main-color;
+			}
+		}
+		&__text {
+			padding: 0.5em;
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			color: $pure-white;
+			font-weight: bold;
+		}
+		&__btn {
+			padding: 0.3em;
+			margin-top: 1em;
+			font-weight: bold;
+			font-size: 2rem;
+			border: none;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $pure-black;
+			background-color: $pure-white;
+			border-radius: 5px;
+			transition: background-color 0.4s;
+			&:hover {
+				background-color: $main-color;
+			}
+		}
+	}
+}
+
+//ABOUTUS--------------------------------------------
+
+.aboutus {
+	display: flex;
+	align-items: center;
+	margin-top: 4em;
+	&__img {
+		img {
+			margin-right: 25px;
+			margin-left: 25px;
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+			box-shadow: 3px 3px 52px $pure-black;
+		}
+		&--right {
+			order: 1;
+		}
+	}
+	&__texts {
+		&-title {
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			color: $main-color;
+		}
+		&--right {
+			text-align: end;
+		}
+	}
+}
+
+//MEDIA----------------------------------------------
+
+@media (min-width: 726px) {
+	.headerImg {
+		background-image: $header-gradient, url(../img/monk-gabcf407e2_1920.jpg);
+		.headerText {
+			width: 75%;
+			&__title {
+				font-size: 6rem;
+				.fa-solid {
+					font-size: 6rem;
+				}
+			}
+			&__text {
+				padding-top: 0.5em;
+				font-size: 2.7rem;
+			}
+			&__btn {
+				font-size: 2.3rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.headerImg {
+		.headerText {
+			width: 75%;
+			&__title {
+				font-size: 8rem;
+				.fa-solid {
+					font-size: 8rem;
+				}
+			}
+			&__text {
+				padding-top: 0.5em;
+				font-size: 3rem;
+			}
+			&__btn {
+				font-size: 2.7rem;
+			}
+		}
+	}
+	.nav__burger-btn {
+		display: none;
+	}
+	.nav__items {
+		display: flex;
+		position: fixed;
+		justify-content: end;
+		top: 15px;
+		right: 3%;
+		z-index: 10;
+		width: 100%;
+		font-size: 2rem;
+		&-item {
+			position: relative;
+			color: $pure-white;
+			padding: 0 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: color 0.4s;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+	.line::before,
+	.line::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border: 0.6px solid white;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+
+	.line::before {
+		left: 50%;
+	}
+
+	.line::after {
+		right: 50%;
+	}
+
+	.line:hover.line::before,
+	.line:hover.line::after {
+		width: 50%;
+		opacity: 1;
+	}
+}
+
+@media (min-width: 1100px) {
+	.headerImg {
+		.headerText {
+			width: 67%;
+			&__title {
+				font-size: 10rem;
+				.fa-solid {
+					font-size: 10rem;
+				}
+			}
+			&__text {
+				padding-top: 0.5em;
+				font-size: 4rem;
+			}
+			&__btn {
+				font-size: 3rem;
+			}
+		}
+	}
+	.nav__burger-btn {
+		display: none;
+	}
+	.nav__items {
+		font-size: 2.5rem;
+	}
+}

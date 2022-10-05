@@ -1,0 +1,24 @@
+// Responsywność na stronie********************************************
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+// Pading na każdej sekcji*********************************************
+.section-padding {
+	padding: 6em 2em;
+}
+//Tytuł każdej sekcji z podkreśleniem miotłą***************************
+.section-title {
+	text-transform: uppercase;
+	text-align: center;
+	.section-heading {
+		font-size: 4.4rem;
+		color: $main-color;
+	}
+	.section-graphic {
+		width: 250px;
+		height: 150px;
+		margin-top: -40px;
+	}
+}
