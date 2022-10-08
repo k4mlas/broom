@@ -13,13 +13,14 @@
   text-align: center;
 }
 .section-title .section-heading {
-  font-size: 4.4rem;
+  font-size: 4rem;
+  font-family: "Peralta", cursive;
   color: rgb(233, 136, 72);
 }
 .section-title .section-graphic {
-  width: 250px;
-  height: 150px;
-  margin-top: -40px;
+  width: 200px;
+  height: 100px;
+  margin-top: -15px;
 }
 
 *,
@@ -36,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "Arsenal", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -113,6 +114,7 @@ body {
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: "Peralta", cursive;
   text-shadow: 3px 3px 3px rgb(50, 49, 49);
   color: rgb(235, 231, 231);
 }
@@ -132,6 +134,7 @@ body {
   margin-top: 1em;
   font-weight: bold;
   font-size: 2rem;
+  font-family: "Peralta", cursive;
   border: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -146,6 +149,7 @@ body {
 
 .aboutus {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 4em;
 }
@@ -153,20 +157,26 @@ body {
   margin-right: 25px;
   margin-left: 25px;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  box-shadow: 3px 3px 52px rgb(50, 49, 49);
-}
-.aboutus__img--right {
-  order: 1;
+  width: 200px;
+  height: 200px;
+  box-shadow: 3px 3px 50px rgb(50, 49, 49);
+  transition: box-shadow 0.3s;
 }
 .aboutus__texts-title {
-  font-size: 2.4rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  text-align: center;
   text-transform: uppercase;
   color: rgb(233, 136, 72);
 }
-.aboutus__texts--right {
-  text-align: end;
+.aboutus__texts-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.aboutus__img:hover img {
+  box-shadow: 7px 7px 80px rgb(233, 136, 72);
 }
 
 @media (min-width: 726px) {
@@ -188,6 +198,36 @@ body {
   }
   .headerImg .headerText__btn {
     font-size: 2.3rem;
+  }
+  .aboutus {
+    flex-direction: row;
+  }
+  .aboutus__img img {
+    width: 250px;
+    height: 250px;
+  }
+  .aboutus__img--right {
+    order: 1;
+  }
+  .aboutus__texts-title {
+    text-align: start;
+    font-size: 2.4rem;
+  }
+  .aboutus__texts-text {
+    text-align: start;
+    font-size: 1.9rem;
+  }
+  .aboutus__texts--right {
+    text-align: end;
+    text-decoration: underline;
+  }
+  .section-title .section-heading {
+    font-size: 4.4rem;
+  }
+  .section-title .section-graphic {
+    width: 250px;
+    height: 150px;
+    margin-top: -15px;
   }
 }
 @media (min-width: 992px) {
@@ -252,6 +292,24 @@ body {
 .line:hover.line::after {
     width: 50%;
     opacity: 1;
+  }
+  .aboutus__img img {
+    width: 300px;
+    height: 300px;
+  }
+  .aboutus__img--right {
+    order: 1;
+  }
+  .aboutus__texts-title {
+    font-size: 3rem;
+  }
+  .section-title .section-heading {
+    font-size: 5rem;
+  }
+  .section-title .section-graphic {
+    width: 300px;
+    height: 150px;
+    margin-top: -15px;
   }
 }
 @media (min-width: 1100px) {

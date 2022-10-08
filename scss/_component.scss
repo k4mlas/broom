@@ -13,12 +13,13 @@
 	text-transform: uppercase;
 	text-align: center;
 	.section-heading {
-		font-size: 4.4rem;
+		font-size: 4rem;
+		font-family:'Peralta', cursive;;
 		color: $main-color;
 	}
 	.section-graphic {
-		width: 250px;
-		height: 150px;
-		margin-top: -40px;
+		width: 200px;
+		height: 100px;
+		margin-top: -15px;
 	}
 }
