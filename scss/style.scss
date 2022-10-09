@@ -171,19 +171,29 @@ body {
 
 //Benefits--------------------------------------------
 
-.benefit {
+.benefits {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	&__icon {
-		padding: 0.4em;
-		font-size: 13rem;
-		color: $main-color;
-	}
-	&__text {
-		font-size: 2.5rem;
+	.benefit {
 		text-align: center;
-		text-transform: uppercase;
+		&__icon {
+			padding: 0.4em;
+			font-size: 13rem;
+			color: $pure-black;
+			transition: color 0.3s;
+			&:hover,
+			&:hover + p {
+				color: $main-color;
+			}
+		}
+		&__text {
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			color: $pure-black;
+			transition: color 0.3s;
+		}
 	}
 }
 
@@ -323,18 +333,16 @@ body {
 			}
 		}
 	}
-	.benefit {
-		display: inline-block;
-		margin: 2em auto;
-		&__icon {
-			padding: 0.4em;
-			font-size: 13rem;
-			color: $main-color;
-		}
-		&__text {
-			font-size: 2.5rem;
-			text-align: center;
-			text-transform: uppercase;
+	.benefits {
+		flex-direction: row;
+		justify-content: space-between;
+		.benefit {
+			&__icon {
+				font-size: 6rem;
+			}
+			&__text {
+				font-size: 1.2rem;
+			}
 		}
 	}
 }
@@ -387,6 +395,16 @@ body {
 			width: 300px;
 			height: 150px;
 			margin-top: -15px;
+		}
+	}
+	.benefits {
+		.benefit {
+			&__icon {
+				font-size: 10rem;
+			}
+			&__text {
+				font-size: 1.9rem;
+			}
 		}
 	}
 }
