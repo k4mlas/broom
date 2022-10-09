@@ -171,6 +171,22 @@ body {
 
 //Benefits--------------------------------------------
 
+.benefit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__icon {
+		padding: 0.4em;
+		font-size: 13rem;
+		color: $main-color;
+	}
+	&__text {
+		font-size: 2.5rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
 //MEDIA----------------------------------------------
 
 @media (min-width: 576px) {
@@ -302,9 +318,23 @@ body {
 				text-align: left;
 				font-size: 1.9rem;
 			}
-			&--right{
+			&--right {
 				text-align: right;
 			}
+		}
+	}
+	.benefit {
+		display: inline-block;
+		margin: 2em auto;
+		&__icon {
+			padding: 0.4em;
+			font-size: 13rem;
+			color: $main-color;
+		}
+		&__text {
+			font-size: 2.5rem;
+			text-align: center;
+			text-transform: uppercase;
 		}
 	}
 }

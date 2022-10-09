@@ -183,6 +183,22 @@ body {
   box-shadow: 7px 7px 80px rgb(233, 136, 72);
 }
 
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit__icon {
+  padding: 0.4em;
+  font-size: 13rem;
+  color: rgb(233, 136, 72);
+}
+.benefit__text {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
   .section-title .section-heading {
     font-size: 3.7rem;
@@ -297,6 +313,20 @@ body {
   }
   .aboutus__texts--right {
     text-align: right;
+  }
+  .benefit {
+    display: inline-block;
+    margin: 2em auto;
+  }
+  .benefit__icon {
+    padding: 0.4em;
+    font-size: 13rem;
+    color: rgb(233, 136, 72);
+  }
+  .benefit__text {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 @media (min-width: 992px) {
