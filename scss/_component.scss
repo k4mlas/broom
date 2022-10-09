@@ -6,15 +6,15 @@
 }
 // Pading na każdej sekcji*********************************************
 .section-padding {
-	padding: 6em 2em;
+	padding: 4em 2em;
 }
 //Tytuł każdej sekcji z podkreśleniem miotłą***************************
 .section-title {
 	text-transform: uppercase;
 	text-align: center;
 	.section-heading {
-		font-size: 4rem;
-		font-family:'Peralta', cursive;;
+		font-size: 3.4rem;
+		font-family: 'Peralta', cursive;
 		color: $main-color;
 	}
 	.section-graphic {
@@ -22,4 +22,9 @@
 		height: 100px;
 		margin-top: -15px;
 	}
+}
+
+//Ciemniejsze tło sekcji*********************************************
+.section-dark {
+	background-color: $section-dark;
 }

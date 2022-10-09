@@ -5,7 +5,7 @@
 }
 
 .section-padding {
-  padding: 6em 2em;
+  padding: 4em 2em;
 }
 
 .section-title {
@@ -13,7 +13,7 @@
   text-align: center;
 }
 .section-title .section-heading {
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-family: "Peralta", cursive;
   color: rgb(233, 136, 72);
 }
@@ -21,6 +21,10 @@
   width: 200px;
   height: 100px;
   margin-top: -15px;
+}
+
+.section-dark {
+  background-color: antiquewhite;
 }
 
 *,
@@ -125,7 +129,7 @@ body {
 .headerImg .headerText__text {
   padding: 0.5em;
   font-size: 2.4rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: rgb(235, 231, 231);
   font-weight: bold;
 }
@@ -139,12 +143,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(50, 49, 49);
-  background-color: rgb(235, 231, 231);
+  background-color: rgb(233, 136, 72);
   border-radius: 5px;
   transition: background-color 0.4s;
 }
 .headerImg .headerText__btn:hover {
-  background-color: rgb(233, 136, 72);
+  background-color: rgb(235, 231, 231);
 }
 
 .aboutus {
@@ -165,21 +169,41 @@ body {
 .aboutus__texts-title {
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-align: center;
   text-transform: uppercase;
   color: rgb(233, 136, 72);
 }
 .aboutus__texts-text {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .aboutus__img:hover img {
   box-shadow: 7px 7px 80px rgb(233, 136, 72);
 }
 
-@media (min-width: 726px) {
+@media (min-width: 576px) {
+  .section-title .section-heading {
+    font-size: 3.7rem;
+  }
+  .section-title .section-graphic {
+    width: 200px;
+    height: 100px;
+    margin-top: -15px;
+  }
+  .aboutus__img img {
+    width: 220px;
+    height: 220px;
+  }
+  .aboutus__texts-title {
+    font-size: 1.9rem;
+  }
+  .aboutus__texts-text {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 768px) {
   .headerImg {
     background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/monk-gabcf407e2_1920.jpg);
   }
@@ -199,54 +223,6 @@ body {
   .headerImg .headerText__btn {
     font-size: 2.3rem;
   }
-  .aboutus {
-    flex-direction: row;
-  }
-  .aboutus__img img {
-    width: 250px;
-    height: 250px;
-  }
-  .aboutus__img--right {
-    order: 1;
-  }
-  .aboutus__texts-title {
-    text-align: start;
-    font-size: 2.4rem;
-  }
-  .aboutus__texts-text {
-    text-align: start;
-    font-size: 1.9rem;
-  }
-  .aboutus__texts--right {
-    text-align: end;
-    text-decoration: underline;
-  }
-  .section-title .section-heading {
-    font-size: 4.4rem;
-  }
-  .section-title .section-graphic {
-    width: 250px;
-    height: 150px;
-    margin-top: -15px;
-  }
-}
-@media (min-width: 992px) {
-  .headerImg .headerText {
-    width: 75%;
-  }
-  .headerImg .headerText__title {
-    font-size: 8rem;
-  }
-  .headerImg .headerText__title .fa-solid {
-    font-size: 8rem;
-  }
-  .headerImg .headerText__text {
-    padding-top: 0.5em;
-    font-size: 3rem;
-  }
-  .headerImg .headerText__btn {
-    font-size: 2.7rem;
-  }
   .nav__burger-btn {
     display: none;
   }
@@ -258,7 +234,7 @@ body {
     right: 3%;
     z-index: 10;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .nav__items-item {
     position: relative;
@@ -278,7 +254,7 @@ body {
     bottom: 0;
     width: 0;
     height: 0;
-    border: 0.6px solid white;
+    border: 0.6px solid rgb(235, 231, 231);
     opacity: 0;
     transition: all 0.4s;
   }
@@ -292,6 +268,56 @@ body {
 .line:hover.line::after {
     width: 50%;
     opacity: 1;
+  }
+  .section-title .section-heading {
+    font-size: 4.4rem;
+  }
+  .section-title .section-graphic {
+    width: 250px;
+    height: 150px;
+    margin-top: -15px;
+  }
+  .aboutus {
+    flex-direction: row;
+  }
+  .aboutus__img img {
+    width: 250px;
+    height: 250px;
+  }
+  .aboutus__img--right {
+    order: 1;
+  }
+  .aboutus__texts-title {
+    text-align: left;
+    font-size: 2.4rem;
+  }
+  .aboutus__texts-text {
+    text-align: left;
+    font-size: 1.9rem;
+  }
+  .aboutus__texts--right {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .headerImg .headerText {
+    width: 75%;
+  }
+  .headerImg .headerText__title {
+    font-size: 8rem;
+  }
+  .headerImg .headerText__title .fa-solid {
+    font-size: 8rem;
+  }
+  .headerImg .headerText__text {
+    padding-top: 0.5em;
+    font-size: 3rem;
+  }
+  .headerImg .headerText__btn {
+    font-size: 2.7rem;
+  }
+  .nav__items {
+    font-size: 2rem;
   }
   .aboutus__img img {
     width: 300px;
@@ -328,9 +354,6 @@ body {
   }
   .headerImg .headerText__btn {
     font-size: 3rem;
-  }
-  .nav__burger-btn {
-    display: none;
   }
   .nav__items {
     font-size: 2.5rem;

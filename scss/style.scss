@@ -108,7 +108,7 @@ body {
 		&__text {
 			padding: 0.5em;
 			font-size: 2.4rem;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			color: $pure-white;
 			font-weight: bold;
 		}
@@ -122,11 +122,11 @@ body {
 			text-decoration: none;
 			text-transform: uppercase;
 			color: $pure-black;
-			background-color: $pure-white;
+			background-color: $main-color;
 			border-radius: 5px;
 			transition: background-color 0.4s;
 			&:hover {
-				background-color: $main-color;
+				background-color: $pure-white;
 			}
 		}
 	}
@@ -154,14 +154,14 @@ body {
 		&-title {
 			margin-top: 25px;
 			margin-bottom: 25px;
-			font-size: 1.8rem;
+			font-size: 1.7rem;
 			text-align: center;
 			text-transform: uppercase;
 			color: $main-color;
 		}
 		&-text {
 			text-align: center;
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -169,9 +169,41 @@ body {
 	box-shadow: 7px 7px 80px $main-color;
 }
 
+//Benefits--------------------------------------------
+
 //MEDIA----------------------------------------------
 
-@media (min-width: 726px) {
+@media (min-width: 576px) {
+	.section-title {
+		.section-heading {
+			font-size: 3.7rem;
+		}
+		.section-graphic {
+			width: 200px;
+			height: 100px;
+			margin-top: -15px;
+		}
+	}
+
+	.aboutus {
+		&__img {
+			img {
+				width: 220px;
+				height: 220px;
+			}
+		}
+		&__texts {
+			&-title {
+				font-size: 1.9rem;
+			}
+			&-text {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
 	.headerImg {
 		background-image: $header-gradient, url(../img/monk-gabcf407e2_1920.jpg);
 		.headerText {
@@ -191,6 +223,65 @@ body {
 			}
 		}
 	}
+	.nav__burger-btn {
+		display: none;
+	}
+	.nav__items {
+		display: flex;
+		position: fixed;
+		justify-content: end;
+		top: 15px;
+		right: 3%;
+		z-index: 10;
+		width: 100%;
+		font-size: 1.5rem;
+		&-item {
+			position: relative;
+			color: $pure-white;
+			padding: 0 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: color 0.4s;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+	.line::before,
+	.line::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border: 0.6px solid $pure-white;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+
+	.line::before {
+		left: 50%;
+	}
+
+	.line::after {
+		right: 50%;
+	}
+
+	.line:hover.line::before,
+	.line:hover.line::after {
+		width: 50%;
+		opacity: 1;
+	}
+	.section-title {
+		.section-heading {
+			font-size: 4.4rem;
+		}
+		.section-graphic {
+			width: 250px;
+			height: 150px;
+			margin-top: -15px;
+		}
+	}
 	.aboutus {
 		flex-direction: row;
 		&__img {
@@ -204,28 +295,16 @@ body {
 		}
 		&__texts {
 			&-title {
-				text-align: start;
+				text-align: left;
 				font-size: 2.4rem;
 			}
 			&-text {
-				text-align: start;
+				text-align: left;
 				font-size: 1.9rem;
 			}
-			&--right {
-				text-align: end;
-				text-decoration: underline;
+			&--right{
+				text-align: right;
 			}
-		}
-	}
-
-	.section-title {
-		.section-heading {
-			font-size: 4.4rem;
-		}
-		.section-graphic {
-			width: 250px;
-			height: 150px;
-			margin-top: -15px;
 		}
 	}
 }
@@ -249,54 +328,9 @@ body {
 			}
 		}
 	}
-	.nav__burger-btn {
-		display: none;
-	}
+
 	.nav__items {
-		display: flex;
-		position: fixed;
-		justify-content: end;
-		top: 15px;
-		right: 3%;
-		z-index: 10;
-		width: 100%;
 		font-size: 2rem;
-		&-item {
-			position: relative;
-			color: $pure-white;
-			padding: 0 15px;
-			text-decoration: none;
-			text-transform: uppercase;
-			transition: color 0.4s;
-			&:hover {
-				color: $main-color;
-			}
-		}
-	}
-	.line::before,
-	.line::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		width: 0;
-		height: 0;
-		border: 0.6px solid white;
-		opacity: 0;
-		transition: all 0.4s;
-	}
-
-	.line::before {
-		left: 50%;
-	}
-
-	.line::after {
-		right: 50%;
-	}
-
-	.line:hover.line::before,
-	.line:hover.line::after {
-		width: 50%;
-		opacity: 1;
 	}
 
 	.aboutus {
@@ -345,9 +379,6 @@ body {
 				font-size: 3rem;
 			}
 		}
-	}
-	.nav__burger-btn {
-		display: none;
 	}
 	.nav__items {
 		font-size: 2.5rem;
