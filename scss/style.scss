@@ -180,7 +180,7 @@ body {
 		text-align: center;
 		&__icon {
 			padding: 0.4em;
-			font-size: 13rem;
+			font-size: 10rem;
 			color: $pure-black;
 			transition: color 0.3s;
 			&:hover,
@@ -212,11 +212,16 @@ body {
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
-		p {
-			font-size: 55px;
+		&-text {
+			font-size: 25px;
 			font-family: 'Peralta', cursive;
 			color: $pure-white;
 			text-transform: uppercase;
+		}
+		hr {
+			width: 10%;
+			height: 3px;
+			background-color: $pure-white;
 		}
 	}
 }
@@ -366,6 +371,18 @@ body {
 			}
 			&__text {
 				font-size: 1.2rem;
+			}
+		}
+	}
+	.headerGraphic {
+		&__img {
+			background-image: $header-gradient, url(../img/market-gcf515c2f0_1920.jpg);
+			&-text {
+				font-size: 45px;
+			}
+			hr {
+				width: 10%;
+				height: 3px;
 			}
 		}
 	}

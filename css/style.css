@@ -194,7 +194,7 @@ body {
 }
 .benefits .benefit__icon {
   padding: 0.4em;
-  font-size: 13rem;
+  font-size: 10rem;
   color: rgb(50, 49, 49);
   transition: color 0.3s;
 }
@@ -219,11 +219,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-.headerGraphic__img p {
-  font-size: 55px;
+.headerGraphic__img-text {
+  font-size: 25px;
   font-family: "Peralta", cursive;
   color: rgb(235, 231, 231);
   text-transform: uppercase;
+}
+.headerGraphic__img hr {
+  width: 10%;
+  height: 3px;
+  background-color: rgb(235, 231, 231);
 }
 
 @media (min-width: 576px) {
@@ -350,6 +355,16 @@ body {
   }
   .benefits .benefit__text {
     font-size: 1.2rem;
+  }
+  .headerGraphic__img {
+    background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/market-gcf515c2f0_1920.jpg);
+  }
+  .headerGraphic__img-text {
+    font-size: 45px;
+  }
+  .headerGraphic__img hr {
+    width: 10%;
+    height: 3px;
   }
 }
 @media (min-width: 992px) {
