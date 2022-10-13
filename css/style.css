@@ -208,6 +208,24 @@ body {
   transition: color 0.3s;
 }
 
+.headerGraphic__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/market-gf33bb856c_640.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.headerGraphic__img p {
+  font-size: 55px;
+  font-family: "Peralta", cursive;
+  color: rgb(235, 231, 231);
+  text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
   .section-title .section-heading {
     font-size: 3.7rem;
