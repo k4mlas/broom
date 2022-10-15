@@ -210,6 +210,7 @@ body {
 
 .headerGraphic__img {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -220,15 +221,16 @@ body {
   background-attachment: fixed;
 }
 .headerGraphic__img-text {
-  font-size: 25px;
+  text-align: center;
+  font-size: 21px;
   font-family: "Peralta", cursive;
   color: rgb(235, 231, 231);
   text-transform: uppercase;
 }
 .headerGraphic__img hr {
-  width: 10%;
-  height: 3px;
-  background-color: rgb(235, 231, 231);
+  width: 30%;
+  height: 1px;
+  color: rgb(233, 136, 72);
 }
 
 .teamsCards {
@@ -242,7 +244,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 300px;
   height: 550px;
   border-radius: 5px;
   margin-bottom: 5em;
@@ -273,20 +275,26 @@ body {
 .teamsCards__text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: absolute;
-  font-size: 60px;
+  font-size: 20px;
+  text-align: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 80px 30px;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.657);
+  color: rgb(235, 231, 231);
   -webkit-clip-path: circle(0% at 50% 90%);
           clip-path: circle(0% at 50% 90%);
   transition: -webkit-clip-path 0.8s;
   transition: clip-path 0.8s;
   transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+}
+.teamsCards .teamsCards__card:hover .teamsCards__text {
+  -webkit-clip-path: circle(100% at 50% 90%);
+          clip-path: circle(100% at 50% 90%);
 }
 
 @media (min-width: 576px) {
@@ -307,6 +315,13 @@ body {
   }
   .aboutus__texts-text {
     font-size: 1.7rem;
+  }
+  .headerGraphic__img-text {
+    font-size: 35px;
+  }
+  .headerGraphic__img hr {
+    width: 25%;
+    height: 3px;
   }
 }
 @media (min-width: 768px) {
@@ -421,7 +436,7 @@ body {
     font-size: 45px;
   }
   .headerGraphic__img hr {
-    width: 10%;
+    width: 25%;
     height: 3px;
   }
 }
@@ -468,6 +483,13 @@ body {
   }
   .benefits .benefit__text {
     font-size: 1.9rem;
+  }
+  .headerGraphic__img-text {
+    font-size: 55px;
+  }
+  .headerGraphic__img hr {
+    width: 25%;
+    height: 3px;
   }
 }
 @media (min-width: 1100px) {

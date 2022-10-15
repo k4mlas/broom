@@ -199,11 +199,12 @@ body {
 
 //Offer
 
-//headerGraphic
+//headerGraphic-----------------------------------------------------
 
 .headerGraphic {
 	&__img {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
@@ -213,33 +214,35 @@ body {
 		background-size: cover;
 		background-attachment: fixed;
 		&-text {
-			font-size: 25px;
+			text-align: center;
+			font-size: 21px;
 			font-family: 'Peralta', cursive;
 			color: $pure-white;
 			text-transform: uppercase;
 		}
 		hr {
-			width: 10%;
-			height: 3px;
-			background-color: $pure-white;
+			width: 30%;
+			height: 1px;
+			color: $main-color;
 		}
 	}
 }
 
-//Teams
+//Teams--------------------------------------------------------------------
 
 .teamsCards {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	// width: 100%;
 
 	&__card {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 350px;
+		width: 300px;
 		height: 550px;
 		border-radius: 5px;
 		margin-bottom: 5em;
@@ -248,7 +251,6 @@ body {
 
 		h3 {
 			position: absolute;
-
 			text-transform: uppercase;
 			font-family: 'Peralta', cursive;
 			font-size: 3.5rem;
@@ -273,17 +275,24 @@ body {
 	&__text {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		position: absolute;
-		font-size: 60px;
+		font-size: 20px;
+		text-align: center;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		padding: 80px 30px;
-		background-color: rgb(0, 0, 0, 0.85);
-		color: white;
+		background-color: rgba(0, 0, 0, 0.657);
+		color: $pure-white;
 		clip-path: circle(0% at 50% 90%);
 		transition: clip-path 0.8s;
+	}
+	.teamsCards__card:hover {
+		.teamsCards__text {
+			clip-path: circle(100% at 50% 90%);
+		}
 	}
 }
 
@@ -314,6 +323,17 @@ body {
 			}
 			&-text {
 				font-size: 1.7rem;
+			}
+		}
+	}
+	.headerGraphic {
+		&__img {
+			&-text {
+				font-size: 35px;
+			}
+			hr {
+				width: 25%;
+				height: 3px;
 			}
 		}
 	}
@@ -442,7 +462,7 @@ body {
 				font-size: 45px;
 			}
 			hr {
-				width: 10%;
+				width: 25%;
 				height: 3px;
 			}
 		}
@@ -506,6 +526,17 @@ body {
 			}
 			&__text {
 				font-size: 1.9rem;
+			}
+		}
+	}
+	.headerGraphic {
+		&__img {
+			&-text {
+				font-size: 55px;
+			}
+			hr {
+				width: 25%;
+				height: 3px;
 			}
 		}
 	}
