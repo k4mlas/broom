@@ -226,6 +226,67 @@ body {
 	}
 }
 
+//Teams
+
+.teamsCards {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__card {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 350px;
+		height: 550px;
+		border-radius: 5px;
+		margin-bottom: 5em;
+		background-position: center;
+		background-size: cover;
+
+		h3 {
+			position: absolute;
+
+			text-transform: uppercase;
+			font-family: 'Peralta', cursive;
+			font-size: 3.5rem;
+			color: $main-color;
+			background-color: rebeccapurple;
+			bottom: 15px;
+		}
+
+		&--one {
+			background-image: url(../img/man-gb4b0c0b09_640.jpg);
+		}
+		&--two {
+			background-image: url(../img/man-gb4b0c0b09_640.jpg);
+		}
+		&--three {
+			background-image: url(../img/man-gb4b0c0b09_640.jpg);
+		}
+		&--four {
+			background-image: url(../img/man-gb4b0c0b09_640.jpg);
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		font-size: 60px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 80px 30px;
+		background-color: rgb(0, 0, 0, 0.85);
+		color: white;
+		clip-path: circle(0% at 50% 90%);
+		transition: clip-path 0.8s;
+	}
+}
+
 //MEDIA----------------------------------------------
 
 @media (min-width: 576px) {

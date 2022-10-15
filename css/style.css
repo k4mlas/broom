@@ -231,6 +231,64 @@ body {
   background-color: rgb(235, 231, 231);
 }
 
+.teamsCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamsCards__card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 550px;
+  border-radius: 5px;
+  margin-bottom: 5em;
+  background-position: center;
+  background-size: cover;
+}
+.teamsCards__card h3 {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Peralta", cursive;
+  font-size: 3.5rem;
+  color: rgb(233, 136, 72);
+  background-color: rebeccapurple;
+  bottom: 15px;
+}
+.teamsCards__card--one {
+  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+}
+.teamsCards__card--two {
+  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+}
+.teamsCards__card--three {
+  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+}
+.teamsCards__card--four {
+  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+}
+.teamsCards__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 60px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  -webkit-clip-path: circle(0% at 50% 90%);
+          clip-path: circle(0% at 50% 90%);
+  transition: -webkit-clip-path 0.8s;
+  transition: clip-path 0.8s;
+  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+}
+
 @media (min-width: 576px) {
   .section-title .section-heading {
     font-size: 3.7rem;
