@@ -243,7 +243,7 @@ body {
 		align-items: center;
 		width: 300px;
 		height: 550px;
-		border-radius: 5px;
+		border-radius: 7px;
 		margin-bottom: 5em;
 		background-position: center;
 		background-size: cover;
@@ -254,8 +254,8 @@ body {
 			font-family: 'Peralta', cursive;
 			font-size: 3.5rem;
 			color: $main-color;
-			background-color: rebeccapurple;
 			bottom: 15px;
+			transition: clip-path 1s;
 		}
 
 		&--one {
@@ -283,14 +283,18 @@ body {
 		left: 0;
 		right: 0;
 		padding: 80px 30px;
-		background-color: rgba(0, 0, 0, 0.657);
+		background-color: rgba(233, 136, 72, 0.712);
 		color: $pure-white;
+		overflow: hidden;
 		clip-path: circle(0% at 50% 90%);
 		transition: clip-path 0.8s;
 	}
 	.teamsCards__card:hover {
 		.teamsCards__text {
 			clip-path: circle(100% at 50% 90%);
+		}
+		h3 {
+			display: none;
 		}
 	}
 }

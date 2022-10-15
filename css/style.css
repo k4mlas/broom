@@ -246,7 +246,7 @@ body {
   align-items: center;
   width: 300px;
   height: 550px;
-  border-radius: 5px;
+  border-radius: 7px;
   margin-bottom: 5em;
   background-position: center;
   background-size: cover;
@@ -257,8 +257,10 @@ body {
   font-family: "Peralta", cursive;
   font-size: 3.5rem;
   color: rgb(233, 136, 72);
-  background-color: rebeccapurple;
   bottom: 15px;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
 }
 .teamsCards__card--one {
   background-image: url(../img/man-gb4b0c0b09_640.jpg);
@@ -284,8 +286,9 @@ body {
   left: 0;
   right: 0;
   padding: 80px 30px;
-  background-color: rgba(0, 0, 0, 0.657);
+  background-color: rgba(233, 136, 72, 0.712);
   color: rgb(235, 231, 231);
+  overflow: hidden;
   -webkit-clip-path: circle(0% at 50% 90%);
           clip-path: circle(0% at 50% 90%);
   transition: -webkit-clip-path 0.8s;
@@ -295,6 +298,9 @@ body {
 .teamsCards .teamsCards__card:hover .teamsCards__text {
   -webkit-clip-path: circle(100% at 50% 90%);
           clip-path: circle(100% at 50% 90%);
+}
+.teamsCards .teamsCards__card:hover h3 {
+  display: none;
 }
 
 @media (min-width: 576px) {
