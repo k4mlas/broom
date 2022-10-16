@@ -256,30 +256,30 @@ body {
   text-transform: uppercase;
   font-family: "Peralta", cursive;
   font-size: 3.5rem;
-  color: rgb(233, 136, 72);
+  color: rgb(235, 231, 231);
   bottom: 15px;
   transition: -webkit-clip-path 1s;
   transition: clip-path 1s;
   transition: clip-path 1s, -webkit-clip-path 1s;
 }
 .teamsCards__card--one {
-  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+  background-image: url(../img/cleaner-g91a392da6_640.jpg);
 }
 .teamsCards__card--two {
-  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+  background-image: url(../img/cleaner-g91a392da6_640.jpg);
 }
 .teamsCards__card--three {
-  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+  background-image: url(../img/cleaner-g91a392da6_640.jpg);
 }
 .teamsCards__card--four {
-  background-image: url(../img/man-gb4b0c0b09_640.jpg);
+  background-image: url(../img/cleaner-g91a392da6_640.jpg);
 }
 .teamsCards__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  font-size: 20px;
+  font-size: 27px;
   text-align: center;
   top: 0;
   bottom: 0;

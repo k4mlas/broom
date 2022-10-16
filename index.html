@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Peralta&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -183,7 +184,7 @@
         <section class="headerGraphic">
             <div class="headerGraphic__img">
                 <hr>
-                <p class="headerGraphic__img-text">zamiatamy z pasją</p>
+                <p data-aos="fade-up" class="headerGraphic__img-text">zamiatamy z pasją</p>
                 <hr>
             </div>
         </section>
@@ -194,7 +195,9 @@
                     <img class="section-graphic" src="./img/broom-g5fa5552b2_640.png" alt="Miotła">
                 </div>
 
-                <div class="teamsCards">
+
+                <div data-aos="fade-up" class="teamsCards">
+
                     <div class="teamsCards__card teamsCards__card--one">
                         <h3>Halina</h3>
                         <div class="teamsCards__text">
@@ -202,6 +205,7 @@
                                 necessitatibus tempora fuga.</p>
                         </div>
                     </div>
+
                     <div class="teamsCards__card teamsCards__card--two">
                         <h3>Grażyna</h3>
                         <div class="teamsCards__text">
@@ -226,7 +230,7 @@
                 </div>
             </div>
         </section>
-        <section class="teams section-padding section-dark" id="opinions">
+        <section class="opinions section-padding section-dark" id="opinions">
             <div class="wrapper">
                 <div class="section-title">
                     <h2 class="section-heading">opinie</h2>
@@ -249,7 +253,12 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',offset: 200, once: false
+        });
+      </script>
     <link rel="stylesheet" href="./js/main.js">
 </body>
 
