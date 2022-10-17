@@ -254,21 +254,22 @@ body {
 			font-family: 'Peralta', cursive;
 			font-size: 3.5rem;
 			color: $pure-white;
+			text-shadow: 3px 3px 3px $pure-black;
 			bottom: 15px;
 			transition: clip-path 1s;
 		}
 
 		&--one {
-			background-image: url(../img/cleaner-g91a392da6_640.jpg);
+			background-image: url(../img/cleaning-g3fa26765e_640.jpg);
 		}
 		&--two {
-			background-image: url(../img/cleaner-g91a392da6_640.jpg);
+			background-image: url(../img/window-wax-g1dadc6855_640.jpg);
 		}
 		&--three {
 			background-image: url(../img/cleaner-g91a392da6_640.jpg);
 		}
 		&--four {
-			background-image: url(../img/cleaner-g91a392da6_640.jpg);
+			background-image: url(../img/industrial-gc96fb4597_640.jpg);
 		}
 	}
 	&__text {
@@ -283,8 +284,9 @@ body {
 		left: 0;
 		right: 0;
 		padding: 80px 30px;
-		background-color: rgba(233, 136, 72, 0.712);
+		background-color: rgba(233, 136, 72, 0.809);
 		color: $pure-white;
+		text-shadow: 3px 3px 3px $pure-black;
 		overflow: hidden;
 		clip-path: circle(0% at 50% 90%);
 		transition: clip-path 0.8s;
