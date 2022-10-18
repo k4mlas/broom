@@ -301,6 +301,52 @@ body {
 	}
 }
 
+//opinions
+
+.opinionsBox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4em;
+}
+
+.opinion {
+	
+	position: relative;
+	width: 400px;
+	height: 180px;
+	margin-bottom: 70px;
+	background-color: $pure-white;
+	border-radius: 10px;
+	&__img {
+		position: absolute;
+		top: -40px;
+		width: 100px;
+		height: 100px;
+		background-image: url(../img/man-g03cc83d7a_640.jpg);
+		background-position: center;
+		background-size: cover;
+		border-radius: 50%;
+	}
+	&__info {
+		position: absolute;
+		top: 70px;
+		padding: 15px;
+		h3 {
+			font-family: 'Peralta', cursive;
+			font-size: 2rem;
+			margin-bottom: 5px;
+		}
+		p {
+			font-size: 1.5rem;
+			.fa-solid {
+				font-size: 2rem;
+				color: $main-color;
+			}
+		}
+	}
+}
+
 //MEDIA----------------------------------------------
 
 @media (min-width: 576px) {
