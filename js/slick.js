@@ -1,20 +1,17 @@
 $(document).ready(function () {
-	$('.').slick({
+	$('.opinionsBox').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2500,
 		arrows: false,
-        
-        
 		mobileFirst: true,
 		responsive: [
 			{
-				breakpoint: 700,
+				breakpoint: 768,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
 					slidesToScroll: 1,
-                    
 				},
 			},
 		],

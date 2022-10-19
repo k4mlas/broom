@@ -305,10 +305,10 @@ body {
 
 .opinionsBox {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	margin-top: 4em;
-	height: 150%;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .opinion {
@@ -319,6 +319,7 @@ body {
 	background-color: $pure-white;
 	border-radius: 10px;
 	border: 3px solid $main-color;
+	margin: 45px 50px;
 
 	&__img {
 		position: absolute;
@@ -542,21 +543,6 @@ body {
 		&__card {
 			margin: 5px 5px;
 		}
-	}
-	.opinionsBox {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: center;
-		
-	}
-	.opinion {
-		width: 400px;
-		height: 350px;
-		margin-left: 4em;
-		margin-bottom: 0;
-		margin-bottom: 70px;
 	}
 }
 
