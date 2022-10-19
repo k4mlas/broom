@@ -310,6 +310,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 4em;
+  height: 150%;
 }
 
 .opinion {
@@ -324,6 +325,7 @@ body {
 .opinion__img {
   position: absolute;
   top: -40px;
+  left: -25px;
   width: 100px;
   height: 100px;
   background-position: center;
@@ -516,11 +518,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .opinion {
     width: 400px;
     height: 350px;
     margin-left: 4em;
+    margin-bottom: 0;
+    margin-bottom: 70px;
   }
 }
 @media (min-width: 992px) {
