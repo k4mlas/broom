@@ -365,6 +365,16 @@ body {
   color: rgb(233, 136, 72);
 }
 
+.contact {
+  background-image: url(../img/cleanliness-g50158dff4_640.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+contact__info {
+  height: 800px;
+}
+
 @media (min-width: 576px) {
   .section-title .section-heading {
     font-size: 3.7rem;
