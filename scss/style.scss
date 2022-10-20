@@ -448,17 +448,26 @@ body {
 		position: fixed;
 		justify-content: end;
 		top: 15px;
-		right: 3%;
+		right: 0;
 		z-index: 10;
 		width: 100%;
 		font-size: 1.5rem;
+		background-color: rgba(0, 0, 0, 0.541);
 		&-item {
+			
 			position: relative;
+			left: -30px;
 			color: $pure-white;
 			padding: 0 15px;
 			text-decoration: none;
 			text-transform: uppercase;
 			transition: color 0.4s;
+			&--home {
+				left: -30%;
+				font-family: 'Peralta', cursive;
+				color: $pure-white;
+			
+			}
 			&:hover {
 				color: $main-color;
 			}
