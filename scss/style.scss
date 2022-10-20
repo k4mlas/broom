@@ -314,7 +314,7 @@ body {
 .opinion {
 	position: relative;
 	width: 300px;
-	height: 310px;
+	height: 350px;
 	margin-bottom: 70px;
 	background-color: $pure-white;
 	border-radius: 10px;
@@ -370,9 +370,10 @@ body {
 	background-image: url(../img/cleanliness-g50158dff4_640.jpg);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
-contact__info {
+.contact__info {
 	height: 800px;
 }
 
@@ -554,6 +555,9 @@ contact__info {
 		&__card {
 			margin: 5px 5px;
 		}
+	}
+	.contact {
+		background-image: url(../img/cleanliness-gccb5e32ad_1920.jpg);
 	}
 }
 
