@@ -304,16 +304,16 @@ body {
   transition: clip-path 1s, -webkit-clip-path 1s;
 }
 .teamsCards__card--one {
-  background-image: url(../img/kakak.jpg);
+  background-image: url(../img/Halina.jpg);
 }
 .teamsCards__card--two {
-  background-image: url(../img/pexels-liliana-drew-9462192.jpg);
+  background-image: url(../img/Beata.jpg);
 }
 .teamsCards__card--three {
-  background-image: url(../img/gustaw.jpg);
+  background-image: url(../img/Robert.jpg);
 }
 .teamsCards__card--four {
-  background-image: url(../img/pexels-liliana-drew-9462206.jpg);
+  background-image: url(../img/Martyna.jpg);
 }
 .teamsCards__text {
   display: flex;
