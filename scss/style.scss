@@ -202,6 +202,40 @@ body {
 .offer {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.offer__card-img {
+	width: 300px;
+	height: 500px;
+	border-radius: 8px;
+	&-title {
+		color: $pure-white;
+		font-family: 'Peralta', cursive;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.9rem;
+	}
+	&-info {
+		color: $pure-white;
+		text-transform: capitalize;
+		font-size: 1.5rem;
+	}
+	&--first {
+		background-image: $bronz-gradient, url(../img/bronz.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	&--second {
+		background-image: $silver-gradient, url(../img/silver.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	&--third {
+		background-image: $gold-gradient, url(../img/gold.jpg);
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 //headerGraphic-----------------------------------------------------

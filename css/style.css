@@ -211,6 +211,41 @@ body {
 .offer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__card-img {
+  width: 300px;
+  height: 500px;
+  border-radius: 8px;
+}
+.offer__card-img-title {
+  color: rgb(235, 231, 231);
+  font-family: "Peralta", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.9rem;
+}
+.offer__card-img-info {
+  color: rgb(235, 231, 231);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.offer__card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(13, 14, 17, 0.4)), url(../img/bronz.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.offer__card-img--second {
+  background-image: linear-gradient(45deg, rgba(34, 221, 246, 0.61), rgba(211, 215, 225, 0.4)), url(../img/silver.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.offer__card-img--third {
+  background-image: linear-gradient(45deg, rgba(195, 245, 45, 0.61), rgba(132, 245, 45, 0.4)), url(../img/gold.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .headerGraphic__img {

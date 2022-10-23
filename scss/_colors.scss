@@ -1,9 +1,10 @@
 $pure-white: rgb(235, 231, 231);
-$pure-black:rgb(50, 49, 49);
+$pure-black: rgb(50, 49, 49);
 $main-color: rgb(233, 136, 72);
-$header-gradient: linear-gradient(
-	45deg,
-	rgba(8, 8, 8, 0.61),
-	#4247a366
-);
-$section-dark:antiquewhite; 
+$header-gradient: linear-gradient(45deg, rgba(8, 8, 8, 0.61), #4247a366);
+$section-dark: antiquewhite;
+
+$bronz-gradient: linear-gradient(45deg, rgba(8, 8, 8, 0.61), #0d0e1166);
+
+$silver-gradient: linear-gradient(45deg, rgba(34, 221, 246, 0.61), #d3d7e166);
+$gold-gradient: linear-gradient(45deg, rgba(195, 245, 45, 0.61), #84f52d66);
