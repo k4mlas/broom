@@ -208,6 +208,11 @@ body {
   transition: color 0.3s;
 }
 
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+
 .headerGraphic__img {
   display: flex;
   flex-direction: column;
@@ -264,16 +269,16 @@ body {
   transition: clip-path 1s, -webkit-clip-path 1s;
 }
 .teamsCards__card--one {
-  background-image: url(../img/cleaning-g3fa26765e_640.jpg);
+  background-image: url(../img/kakak.jpg);
 }
 .teamsCards__card--two {
-  background-image: url(../img/window-wax-g1dadc6855_640.jpg);
+  background-image: url(../img/pexels-liliana-drew-9462192.jpg);
 }
 .teamsCards__card--three {
-  background-image: url(../img/cleaner-g91a392da6_640.jpg);
+  background-image: url(../img/gustaw.jpg);
 }
 .teamsCards__card--four {
-  background-image: url(../img/industrial-gc96fb4597_640.jpg);
+  background-image: url(../img/pexels-liliana-drew-9462206.jpg);
 }
 .teamsCards__text {
   display: flex;
@@ -320,8 +325,9 @@ body {
   margin-bottom: 70px;
   background-color: rgb(235, 231, 231);
   border-radius: 10px;
-  border: 3px solid rgb(233, 136, 72);
+  border: 5px solid rgb(233, 136, 72);
   margin: 45px 50px;
+  transition: transform 0.4s;
 }
 .opinion__img {
   position: absolute;
@@ -332,7 +338,7 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
-  border: 2px solid rgb(233, 136, 72);
+  border: 5px solid rgb(233, 136, 72);
 }
 .opinion__img--one {
   background-image: url(../img/man-g03cc83d7a_640.jpg);
@@ -363,6 +369,10 @@ body {
 .opinion__info p .fa-solid {
   font-size: 2rem;
   color: rgb(233, 136, 72);
+}
+
+.opinion:hover {
+  transform: scale(0.9);
 }
 
 .contact {
@@ -430,11 +440,9 @@ body {
     display: flex;
     position: fixed;
     justify-content: end;
-    top: 15px;
     right: 0;
     z-index: 10;
     width: 100%;
-    font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.541);
   }
   .nav__items-item {
@@ -450,6 +458,10 @@ body {
     left: -30%;
     font-family: "Peralta", cursive;
     color: rgb(235, 231, 231);
+  }
+  .nav__items-item--home i {
+    margin-right: 5px;
+    color: rgb(233, 136, 72);
   }
   .nav__items-item:hover {
     color: rgb(233, 136, 72);
