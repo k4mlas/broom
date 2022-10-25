@@ -24,7 +24,7 @@
 }
 
 .section-dark {
-  background-color: antiquewhite;
+  background-color: rgb(215, 212, 209);
 }
 
 *,
@@ -208,44 +208,103 @@ body {
   transition: color 0.3s;
 }
 
-.offer {
+.offersAll {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
 .offer__card-img {
+  position: relative;
   width: 300px;
   height: 500px;
   border-radius: 8px;
 }
 .offer__card-img-title {
+  position: absolute;
   color: rgb(235, 231, 231);
   font-family: "Peralta", cursive;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 2rem;
+  top: 30px;
 }
 .offer__card-img-info {
+  position: absolute;
   color: rgb(235, 231, 231);
   text-transform: capitalize;
-  font-size: 1.5rem;
+  margin-left: 30px;
+  font-size: 2rem;
+  bottom: 30px;
 }
 .offer__card-img--first {
-  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(13, 14, 17, 0.4)), url(../img/bronz.jpg);
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/bronz.jpg);
   background-size: cover;
   background-position: center;
 }
 .offer__card-img--second {
-  background-image: linear-gradient(45deg, rgba(34, 221, 246, 0.61), rgba(211, 215, 225, 0.4)), url(../img/silver.jpg);
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/silver.jpg);
   background-size: cover;
   background-position: center;
 }
 .offer__card-img--third {
-  background-image: linear-gradient(45deg, rgba(195, 245, 45, 0.61), rgba(132, 245, 45, 0.4)), url(../img/gold.jpg);
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/gold.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.offer:hover .offer__card-img {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+.offer:hover .offer__card-info {
+  transform: rotateY(0);
+  opacity: 1;
+}
+
+.offer__card-info {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4));
+  border-radius: 8px;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: transform 1s, opacity 1s;
+}
+.offer__card-info-title {
+  color: rgb(235, 231, 231);
+  font-family: "Peralta", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  top: 30px;
+}
+.offer__card-info-list {
+  color: rgb(235, 231, 231);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  top: 50px;
+}
+.offer__card-info-btn {
+  position: absolute;
 }
 
 .headerGraphic__img {
@@ -411,14 +470,10 @@ body {
 }
 
 .contact {
-  background-image: url(../img/cleanliness-g50158dff4_640.jpg);
+  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/Contactsmall.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.contact__info {
-  height: 800px;
 }
 
 @media (min-width: 576px) {
@@ -581,7 +636,12 @@ body {
     margin: 5px 5px;
   }
   .contact {
-    background-image: url(../img/cleanliness-gccb5e32ad_1920.jpg);
+    background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4)), url(../img/Contact.jpg);
+  }
+  .offersAll {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media (min-width: 992px) {
