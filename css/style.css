@@ -24,7 +24,7 @@
 }
 
 .section-dark {
-  background-color: rgb(215, 212, 209);
+  background-color: rgb(215, 215, 209);
 }
 
 *,
@@ -222,8 +222,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  perspective: 1000px;
   margin-bottom: 20px;
+  perspective: 1000px;
 }
 
 .offer__card-img {
@@ -231,6 +231,7 @@ body {
   width: 300px;
   height: 500px;
   border-radius: 8px;
+  transition: all 1s;
 }
 .offer__card-img-title {
   position: absolute;
@@ -283,13 +284,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.61), rgba(66, 71, 163, 0.4));
   border-radius: 8px;
   opacity: 0;
   transform: rotateY(180deg);
   transition: transform 1s, opacity 1s;
 }
+.offer__card-info--first {
+  background-color: rgba(85, 42, 42, 0.704);
+}
+.offer__card-info--second {
+  background-color: rgb(148, 148, 148);
+}
+.offer__card-info--third {
+  background-color: rgb(138, 214, 7);
+}
 .offer__card-info-title {
+  position: absolute;
   color: rgb(235, 231, 231);
   font-family: "Peralta", cursive;
   text-transform: uppercase;
@@ -302,9 +312,26 @@ body {
   text-transform: capitalize;
   font-size: 1.5rem;
   top: 50px;
+  font-size: 2rem;
 }
 .offer__card-info-btn {
   position: absolute;
+  bottom: 12px;
+  width: 200px;
+  padding: 10px;
+  font-size: 2.5rem;
+  font-family: "Peralta", cursive;
+  color: rgb(235, 231, 231);
+  font-weight: bold;
+  border: none;
+  background-color: rgb(233, 136, 72);
+  border-radius: 5px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.offer__card-info-btn:hover {
+  background-color: rgb(235, 231, 231);
+  color: rgb(233, 136, 72);
 }
 
 .headerGraphic__img {
