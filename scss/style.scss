@@ -19,7 +19,7 @@ body {
 	font-size: 1.6rem;
 }
 
-//NAV--------------------------------
+//NAV------------------------------------------------------
 
 .nav__burger-btn {
 	position: fixed;
@@ -197,7 +197,7 @@ body {
 	}
 }
 
-//Offer
+//Offer------------------------------------------------
 
 .offersAll {
 	position: relative;
@@ -429,7 +429,7 @@ body {
 	}
 }
 
-//opinions
+//opinions-----------------------------------------------------
 
 .opinionsBox {
 	display: flex;
@@ -498,11 +498,44 @@ body {
 }
 
 //Kontakt----------------------------------------------------
-.contact {
-	background-image: $header-gradient, url(../img/Contactsmall.jpg);
+.contacts {
+	background-image: $contact-gradient, url(../img/Contactsmall.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+.contact-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.contact-item {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+		color: $pure-black;
+		h3 {
+			font-family: 'Peralta', cursive;
+			color: $main-color;
+			font-size: 2rem;
+		}
+		.social-media {
+			font-size: 2.9rem;
+		}
+	}
+}
+// footer--------------------------------------------
+.footer {
+width: 100%;
+background-color: $section-dark;
+display: flex;
+justify-content: center;
+align-items: center;
+p {
+	font-size: 2.5rem;
+	color: $pure-black;
+}
 }
 
 //MEDIA----------------------------------------------
@@ -698,8 +731,27 @@ body {
 	}
 	.offersAll {
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
+	}
+	.contact-us {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.contact-item {
+			margin-left: 60px;
+
+			h3 {
+				color: $main-color;
+				font-size: 2.9rem;
+			}
+			.social-media {
+				font-size: 3.5rem;
+			}
+		}
 	}
 }
 
